@@ -1,0 +1,35 @@
+VERSION 12/11/2022 3:25:20 PM
+FIG #C:\users\crossover\My Documents\Projects\My Projects\CEID\VLSI-lab\Exercise_3\Designs\inverters_3b\inverter018.MSK
+BB(15,-3,43,56)
+SIMU #5.00
+ZOOM(-5,-8,48,61)
+REC(15,25,28,31,NW)
+REC(30,31,7,12,DP)
+REC(21,31,7,12,DP)
+REC(21,-3,6,6,DP)
+REC(30,8,7,6,DN)
+REC(21,49,6,6,DN)
+REC(21,8,7,6,DN)
+REC(23,33,2,2,CO)
+REC(23,39,2,2,CO)
+REC(23,51,2,2,CO)
+REC(23,-1,2,2,CO)
+REC(23,10,2,2,CO)
+REC(33,33,2,2,CO)
+REC(33,39,2,2,CO)
+REC(33,10,2,2,CO)
+REC(28,5,2,41,PO)
+REC(21,-3,6,17,ME)
+REC(21,31,6,24,ME)
+REC(31,8,6,35,ME)
+REC(28,31,2,12,DP)
+REC(28,8,2,6,DN)
+TITLE 24 52  #Vdd
+$1 1000 0 
+TITLE 24 0  #Vss
+$0 1000 0 
+TITLE 29 20  #in
+$c 1000 0 0.9500 1.0000 1.9500 2.0000 
+TITLE 34 20  #out
+$v 1000 0 
+FFIG C:\users\crossover\My Documents\Projects\My Projects\CEID\VLSI-lab\Exercise_3\Designs\inverters_3b\inverter018.MSK
