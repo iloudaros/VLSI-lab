@@ -1,4 +1,4 @@
-VERSION 12/11/2022 5:22:25 PM
+VERSION 12/11/2022 5:55:28 PM
 FIG #C:\users\crossover\My Documents\Projects\My Projects\CEID\VLSI-lab\Exercise_3\Designs\inverters_3b\inverter018_3.MSK
 BB(39,41,67,135)
 SIMU #5.00
@@ -31,9 +31,9 @@ REC(47,43,2,2,CO)
 REC(57,52,2,2,CO)
 REC(57,115,2,2,CO)
 REC(52,47,2,75,PO)
+REC(45,83,6,50,ME)
 REC(55,50,6,69,ME)
 REC(45,41,6,27,ME)
-REC(45,83,6,50,ME)
 REC(52,83,2,36,DP)
 REC(52,50,2,18,DN)
 TITLE 53 73  #in
