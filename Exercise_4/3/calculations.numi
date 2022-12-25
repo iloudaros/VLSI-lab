@@ -1,0 +1,88 @@
+############### 4η Εργαστηριακή Άσκηση - Άσκηση 3 ###############
+// Χρησιμοποιείται τεχνολογία cmos65n 
+λ=35nm  = 35 nm
+Wmin = 4*λ  = 140 nm
+min_inv_gate_capacity = 0,5 //fF = 0,5
+τ = 2ns = 2 ns
+Cin_path = 3 = 3
+H = 256 = 256
+Cout_path = H*Cin_path = 768
+
+
+#### Για 4 αντιστροφείς 
+
+F = 1 * 1 * 256 = 256
+f_4 = sqrt (sqrt F)  = 4
+
+
+//K4
+Cin_k4 = Cout_path/f_4 = 192
+
+Wpmos_λ = round(4 * 2/3 * Cin_k4) = 512
+Wpmos = Wpmos_λ * λ  = 17.920 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k4) = 256
+Wnmos = Wnmos_λ * λ = 8.960 nm
+
+
+
+//K3
+Cin_k3 = Cin_k4/f_4 = 48
+
+Wpmos_λ = round(4 * 2/3 * Cin_k3) = 128
+Wpmos = Wpmos_λ * λ  = 4.480 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k3) = 64
+Wnmos = Wnmos_λ * λ = 2.240 nm
+
+//K2
+Cin_k2 = Cin_k3/f_4 = 12
+
+Wpmos_λ = round(4 * 2/3 * Cin_k2) = 32
+Wpmos = Wpmos_λ * λ  = 1.120 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k2) = 16
+Wnmos = Wnmos_λ * λ = 560 nm
+
+//K1
+Cin_k1 = Cin_k2/f_4 = 3
+
+Wpmos_λ = round(4 * 2/3 * Cin_k1) = 8
+Wpmos = Wpmos_λ * λ  = 280 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k1) = 4
+Wnmos = Wnmos_λ * λ = 140 nm
+
+
+//Dmin
+P = (Cin_k1 + Cin_k2 + Cin_k3 + Cin_k4)/3 * τ = 170 ns
+Dmin= f + P = 426 ns
+
+#### Για 2 αντιστροφείς
+
+F = 1 * 1 * 256 = 256
+f_2 = sqrt F = 16
+
+
+//K2
+Cin_k2 = Cout_path/f_2 = 48
+
+Wpmos_λ = round(4 * 2/3 * Cin_k2) = 128
+Wpmos = Wpmos_λ * λ  = 4.480 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k2) = 64
+Wnmos = Wnmos_λ * λ = 2.240 nm
+
+//K1
+Cin_k1 = Cin_k2/f_2 = 3
+
+Wpmos_λ = round(4 * 2/3 * Cin_k1) = 8
+Wpmos = Wpmos_λ * λ  = 280 nm
+
+Wnmos_λ = round(4 * 1/3 * Cin_k1) = 4
+Wnmos = Wnmos_λ * λ = 140 nm
+
+
+//Dmin
+P = (Cin_k1 + Cin_k2)/3 * τ = 34 ns
+Dmin= f + P = 290 ns

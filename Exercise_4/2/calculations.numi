@@ -5,12 +5,12 @@ Wmin = 4*λ  = 140 nm
 min_inv_gate_capacity = 0,5 //fF = 0,5
 
 //Δίνεται από την άσκηση
-H = 18 = 18
+H_2 = 18 = 18
 
 
 #(β)
 C_in_path = 5 = 5
-C_out_path = H * C_in_path
+C_out_path = H_2 * C_in_path = 90
 g_nand3 = 5/3 = 1,667
 g_nor2 = 5/3 = 1,667
 
@@ -19,18 +19,18 @@ g_nor2 = 5/3 = 1,667
 B_β = 1  = 1
 G_β = g_nand3 * g_nor2 = 2,778
 
-F_β = B_β * G_β * H
-f_β = sqrt F_β 
+F_β = B_β * G_β * H_2 = 50
+f_β = sqrt F_β  = 7,071
 
 
 // Για την NOR
-C_in_nor = (g_nor2*C_out_path)/f_β
+C_in_nor = (g_nor2*C_out_path)/f_β = 21,213
 
-Wnor_pmos_λ = round(4 * 4/5 * C_in_nor) = 3
-Wnor_pmos = Wnor_pmos_λ * λ  = 105 nm
+Wnor_pmos_λ = round(4 * 4/5 * C_in_nor) = 68
+Wnor_pmos = Wnor_pmos_λ * λ  = 2.380 nm
 
-Wnor_nmos_λ = round(4 * 1/5 * C_in_nor) = 1
-Wnor_nmos = Wnor_nmos_λ * λ = 35 nm
+Wnor_nmos_λ = round(4 * 1/5 * C_in_nor) = 17
+Wnor_nmos = Wnor_nmos_λ * λ = 595 nm
 
 
 // Για τις NAND
@@ -40,45 +40,44 @@ Wnand_nmos = Wmin * 3/5 * C_in_path // 12λ = 420 nm
 
 
 #(δ)
-H = 18 = 18
 C_in_path = 5 = 5
-C_out_path = H * C_in_path
+C_out_path = H_2 * C_in_path = 90
 g_nand3 = 5/3 = 1,667
 g_nand2 = 4/3 = 1,333
 
 B_δ = 1  = 1
 G_δ = g_nand3 * g_nand2 = 2,222
 
-F_δ = B_δ * G_δ * H = 40
+F_δ = B_δ * G_δ * H_2 = 40
 f_δ = sqrt( sqrt F_δ ) = 2,515
 
 //NOT_right
-C_in_not = C_out_path/f_δ = 2,515
+C_in_not = C_out_path/f_δ = 35,787
 
-Wnot_pmos_λ = round(4 * 2/3 * C_in_not) = 7
-Wnot_pmos = Wnot_pmos_λ * λ  = 245 nm
+Wnot_pmos_λ = round(4 * 2/3 * C_in_not) = 95
+Wnot_pmos = Wnot_pmos_λ * λ  = 3.325 nm
 
-Wnot_nmos_λ = round(4 * 1/3 * C_in_not) = 3
-Wnot_nmos = Wnot_nmos_λ * λ = 105 nm
+Wnot_nmos_λ = round(4 * 1/3 * C_in_not) = 48
+Wnot_nmos = Wnot_nmos_λ * λ = 1.680 nm
 
 
 //NAND_right
-C_in_nand = (g_nand2 * C_in_not)/f_δ = 1,333
+C_in_nand = (g_nand2 * C_in_not)/f_δ = 18,974
 
-Wnand_pmos_λ = round(4 * 1/2 * C_in_nand) = 3
-Wnand_pmos = Wnand_pmos_λ * λ  = 105 nm
+Wnand_pmos_λ = round(4 * 1/2 * C_in_nand) = 38
+Wnand_pmos = Wnand_pmos_λ * λ  = 1.330 nm
 
-Wnand_nmos_λ = round(4 * 1/2 * C_in_nand) = 3
-Wnand_nmos = Wnand_nmos_λ * λ = 105 nm
+Wnand_nmos_λ = round(4 * 1/2 * C_in_nand) = 38
+Wnand_nmos = Wnand_nmos_λ * λ = 1.330 nm
 
 //NOT_left
-C_in_not = C_in_nand/f_δ = 0,53
+C_in_not = C_in_nand/f_δ = 7,545
 
-Wnot_pmos_λ = round(4 * 2/3 * C_in_not) = 1
-Wnot_pmos = Wnot_pmos_λ * λ  = 35 nm
+Wnot_pmos_λ = round(4 * 2/3 * C_in_not) = 20
+Wnot_pmos = Wnot_pmos_λ * λ  = 700 nm
 
-Wnot_nmos_λ = round(4 * 1/3 * C_in_not) = 1
-Wnot_nmos = Wnot_nmos_λ * λ = 35 nm
+Wnot_nmos_λ = round(4 * 1/3 * C_in_not) = 10
+Wnot_nmos = Wnot_nmos_λ * λ = 350 nm
 
 //NAND_left
 Wnand_pmos = Wmin * 2/5 * C_in_path // 8λ = 280 nm
