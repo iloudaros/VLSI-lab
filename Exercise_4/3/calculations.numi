@@ -57,7 +57,7 @@ Wnmos = Wnmos_λ * λ = 140 nm
 
 //Dmin
 P = (Cin_k1 + Cin_k2 + Cin_k3 + Cin_k4)/3 * τ = 170 ns
-Dmin= f + P = 426 ns
+Dmin= f_4 + P = 174 ns
 
 #### Για 2 αντιστροφείς
 
@@ -86,4 +86,4 @@ Wnmos = Wnmos_λ * λ = 140 nm
 
 //Dmin
 P = (Cin_k1 + Cin_k2)/3 * τ = 34 ns
-Dmin= f + P = 290 ns
+Dmin= f_2 + P = 50 ns
