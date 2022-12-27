@@ -7,6 +7,7 @@ min_inv_gate_capacity = 0,5 //fF = 0,5
 Cin_path = 3 = 3
 H = 256 = 256
 Cout_path = H*Cin_path = 768
+C_out_pathF = Cout_path/3 * min_inv_gate_capacity / 1000 //pF = 0,128
 
 
 #### Για 4 αντιστροφείς 

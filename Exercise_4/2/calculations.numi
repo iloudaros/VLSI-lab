@@ -11,6 +11,7 @@ H_2 = 18 = 18
 #(β)
 C_in_path = 5 = 5
 C_out_path = H_2 * C_in_path = 90
+C_out_pathF = C_out_path/3 * min_inv_gate_capacity / 1000 //pF = 0,015
 g_nand3 = 5/3 = 1,667
 g_nor2 = 5/3 = 1,667
 
